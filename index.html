@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta author="Giovanny Garzon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta author="Giovanny Garzon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/pokeball.png">
+      <select name="select" id="select">
+          <option value="Por Nombre">Por Nombre</option>
+          <option value="Por Numero">Por Numero</option>
+          <option value="Por Tipo">Por Tipo</option>
+
+      </select>
+      <input type="text" id="buscar">
+      <button id="boton">Buscar</button>
+
+    </header>
+    <section>
+
+      <div id="display">
+        <div id="pokemon">
+          <img src="img/pikachu.png">
+
+        </div>
+        
+        
+        <div id="panel">
+          <div id="datos">
+            <span id="name">Nombre: </span>
+            <span>Tipo :</span>
+            <span>Habilidad: <select name="hability" id="hability">
+                                <option value="">Seleccione</option>
+                             </select></span>
+            <span>Descripcion: </span>
+
+          </div>
+          <div id="characteristics">
+            <span id="number">Numero: </span>
+            <span id="hp">HP: </span>
+            <span id="at">Ataque: </span>
+            <span id="def">Defensa: </span>
+            <span id="ats">Ataque Esp: </span>
+            <span id="defs">Defensa Esp: </span>
+            <span id="vel">Velocidad: </span>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <article>
+      <div id="layout">
+          <button id="moves">Movimientos</button>
+          <button id="previous">Anterior</button>
+          <button id="next">Siguiente</button>
+          <button id="back">Atras</button>
+
+      </div>
+
+    </article>
+    <footer>
+        <img src="img/pokeball.png">
+        
+    </footer>
+
+  </body>
+</html>

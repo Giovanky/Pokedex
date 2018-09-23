@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*,*:before,*:after{
+    box-sizing: inherit;
+    cursor: pointer;
+}
+html{
+    box-sizing:border-box;
+    font-size: 0.9em;
+}
+html, body{
+    width: 98.5%;
+    height: 99%;
+}
+body{
+    font-family: Roboto;
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "header"
+        "section"
+        "article"
+        "footer";
+}
+body > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    padding: 5px;
+    height: 110px;
+    background: #2c2c2c;
+    color: white;
+    border-radius: 5px;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+header > *{
+    border-radius: 3px;
+}
+section{
+    grid-area: section;
+    border: 3px solid #2c2c2c;
+    border-radius: 7px;
+    justify-self: space-around;
+}
+#pokemon{
+    padding: 5px;
+    border: 3px solid #2c2c2c;
+    border-radius: 10%;
+    height: 100%;
+    background: white;
+}
+section img{
+    width: 300px;
+    height: 280px;
+}
+article{
+    align-items: flex-start;
+    
+}
+#display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#layout{
+    display: grid;
+    grid-gap: 10px;
+    padding: 2px;
+    align-self: center;
+    border-radius: 5px; 
+    grid-template-areas: 
+        "mov mov mov"
+        "ant no sig"
+        "back back back";
+}
+article button{
+    width: 100px;
+    height: 2em;
+    margin: 5px;
+    grid-area: article;
+    border: 3px solid #2c2c2c;
+    border-radius: 5px;
+}
+#moves{
+    grid-area: mov;
+    justify-self: center;
+}
+#previous{
+    grid-area: ant;
+}
+#next{
+    grid-area: sig;
+}
+#back{
+    grid-area: back;
+    justify-self: center;
+}
+#panel{
+    display: flex;
+    height: 90%;
+    border: 3px solid #2c2c2c;
+    border-radius: 5px;
+}
+#datos{
+    display: flex;
+    padding: 1px;
+    flex-direction: column;
+}
+#characteristics{
+    display: grid;
+    grid-gap: 1px;
+    align-items: center;   
+    grid-template-areas: 
+        "numero numero"
+        "hp hp"
+        "at def"
+        "ats defs"
+        "vel vel";
+    flex-wrap: wrap;
+}
+#hp{
+    grid-area: hp;
+    display: flex; 
+    justify-content: center;
+}
+#at{
+    grid-area: at;
+}
+#def{
+    grid-area: def;
+}
+#ats{
+    grid-area: ats;
+}
+#defs{
+    grid-area: defs;
+}
+#vel{
+    grid-area: vel;
+    display: flex; 
+    justify-content: center;
+}
+footer{
+    width: 110px;
+    height: 110px;
+    flex-direction: row;
+    justify-self: center;
+}
+
+
+
