@@ -49,6 +49,7 @@ section{
     border: 3px solid #2c2c2c;
     border-radius: 7px;
     justify-self: space-around;
+    grid-gap: 10px;
 }
 #pokemon{
     padding: 5px;
@@ -68,7 +69,7 @@ article{
 #display{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #layout{
     display: grid;
