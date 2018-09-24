@@ -4,28 +4,28 @@ fetch('pkmnlist.php')
 //Transformar respuesta a json
 .then(res => res.json())
 .then(data =>{
+    let num = 0;
     console.log(data);
     contenido.innerHTML = `
-<div id="pokemon">
-    <img src="${data[0].imagen}">
+    <div id="pokemon">
+    <img src='data:image/png;base64,base64_encode(${data[num].imagen}')>
     </div>
     <div id="panel">
     <div id="datos">
-        <span id="name">Nombre: ${data[0].nombre}</span>
-        <span>Tipo: ${data[0].tipo}</span>
+        <span id="name">Nombre: ${data[num].nombre}</span>
+        <span>Tipo: ${data[num].tipo}</span>
         <span>Habilidad: <select name="hability" id="hability">
-                            <option value="${data[0].habilidad}">${data[0].habilidad}</option>
+                            <option value="${data[num].habilidad}">${data[num].habilidad}</option>
                         </select></span>
-        <span>Descripcion: ${data[0].descripcion}</span>
     </div>
     <div id="characteristics">
-        <span id="number">Numero: ${data[0].id}</span>
-        <span id="hp">HP: ${data[0].hp}</span>
-        <span id="at">Ataque: ${data[0].at}</span>
-        <span id="def">Defensa: ${data[0].def}</span>
-        <span id="ats">Ataque Esp: ${data[0].ats}</span>
-        <span id="defs">Defensa Esp: ${data[0].defs}</span>
-        <span id="vel">Velocidad: ${data[0].vel}</span>
+        <span id="number">Numero: ${data[num].id}</span>
+        <span id="hp">HP: ${data[num].hp}</span>
+        <span id="at">Ataque: ${data[num].at}</span>
+        <span id="def">Defensa: ${data[num].def}</span>
+        <span id="ats">Ataque Esp: ${data[num].ats}</span>
+        <span id="defs">Defensa Esp: ${data[num].defs}</span>
+        <span id="vel">Velocidad: ${data[num].vel}</span>
     </div>
-</div>`
+    </div>`
 })    

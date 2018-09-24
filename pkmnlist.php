@@ -12,7 +12,7 @@
       'nombre' => $row['nombre'],
       'tipo' => $row['tipo'],
       'habilidad' => $row['habilidad'],
-      'description' => $row['descripcion'],
+      'descripcion' => $row['descripcion'],
       'hp' => $row['hp'],
       'at' => $row['at'],
       'def' => $row['def'],

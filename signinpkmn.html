@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta author="Giovanny Garzon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta author="Giovanny Garzon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/pokeball.png">
+      <select name="select" id="select">
+          <option value="Por Nombre">Por Nombre</option>
+          <option value="Por Numero">Por Numero</option>
+          <option value="Por Tipo">Por Tipo</option>
+
+      </select>
+      <input type="text" id="buscar">
+      <button id="boton">Buscar</button>
+
+    </header>
+    <section>
+            <h1>Registrar Nuevo Pokemon!</h1><br>
+            <form id="form">
+            Nombre: <input type="text" id="nombre">
+            Tipo: <select name="tipo" id="tipo">
+                <option value="">Fuego / Volador</option>
+            </select>
+            Habilidad: <select>
+                    <option value="">Mutatipo</option>
+            </select>
+            HP: <input type="text">
+            Ataque: <input type="text">
+            Defensa: <input type="text">
+            Ataque Especial: <input type="text">
+            Defensa Especial: <input type="text">
+            Velocidad: <input type="text">
+            Fotografia: <input type="file" name="archivo" size="20"><br>
+            Descripcion: <textarea name="area" id="area" cols="30" rows="3"></textarea>
+            <button id="boton">+</button>
+        </form>
+
+    </section>
+    <article>
+      <div id="layout">
+          <button id="moves">Movimientos</button>
+          <button id="previous">Anterior</button>
+          <button id="next">Siguiente</button>
+          <button id="back">Atras</button>
+
+      </div>
+
+    </article>
+    <footer>
+        <img src="img/pokeball.png">
+        
+    </footer>
+
+  <script src="js/app.js"></script>
+  </body>
+</html>
